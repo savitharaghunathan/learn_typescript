@@ -2,6 +2,7 @@
   "name": "ts",
   "version": "1.0.0",
   "main": "./dist/app.js",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "prestart": "npm run build",
@@ -14,6 +15,11 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/node": "^20.14.10",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "abort-controller": "^3.0.0",
+    "node-fetch": "^3.3.2"
   }
 }
